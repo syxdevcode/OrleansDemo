@@ -29,10 +29,20 @@ namespace Client
 
             // 从silo处，获得一个BasicGrain的接口
             IGrains.IBasic agrain = GrainClient.GrainFactory.GetGrain<IGrains.IBasic>(314);
+            IGrains.IBasic agrain2 = GrainClient.GrainFactory.GetGrain<IGrains.IBasic>(315);
+
+            var result1 = agrain.DelayedMsg("agrain");
+            //agrain2.SayHello("agrain2");
+            Console.WriteLine(result1.Result);
+
+            //agrain2.SayHello("315出发");
 
             //调用里面的方法，等待它返回
-            string result = await agrain.SayHello("可以");
+            string result = agrain.SayHello("可以").Result;
             Console.WriteLine(result);
+
+            var grain = GrainClient.GrainFactory.GetGrain<IGrains.IExampleGrain>(0, "a string!","");
+            grain.Hello();
         }
     }
 }
