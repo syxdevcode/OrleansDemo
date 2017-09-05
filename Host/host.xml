@@ -3,8 +3,15 @@
   <Globals>
     <!--种子节点,也是主节点-->
     <SeedNode Address="localhost" Port="11111" />
+    
+    <SystemStore SystemStoreType="SqlServer"
+               DeploymentId="我就说123"
+               DataConnectionString="Server=.;Database=OrleansBasic;User Id=sa;Password=Xing_*SQL;"/>
+
+    <!--<SystemStore SystemStoreType="Custom"   MembershipTableAssembly="OrleansConsulUtils" DataConnectionString="http://localhost:8500" DeploymentId="MyOrleansDeployment" />-->
+
     <StorageProviders>
-      <Provider Type="Orleans.Storage.AdoNetStorageProvider" Name="BasicMysql" DataConnectionString="Server=127.0.0.1;Database=OrleansBasic;User Id=sa;Password=Xing_*SQL;"  />
+      <Provider Type="Orleans.Storage.AdoNetStorageProvider" Name="BasicMysql" DataConnectionString="Server=.;Database=OrleansBasic;User Id=sa;Password=Xing_*SQL;"  />
     </StorageProviders>
   </Globals>
   <Defaults>

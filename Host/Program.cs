@@ -35,6 +35,13 @@ namespace Host
 
             Console.ReadKey();
 
+            /*
+            // 关闭，停止
+            silohost.StopOrleansSilo();
+            silohost.UnInitializeOrleansSilo();
+            silohost.ShutdownOrleansSilo();
+            */
+            Console.ReadKey();
         }
     }
 }
