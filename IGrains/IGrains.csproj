@@ -170,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBasic.cs" />
+    <Compile Include="IBasicWithState.cs" />
+    <Compile Include="IEmployeeAndIManger.cs" />
     <Compile Include="IExampleGrain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
