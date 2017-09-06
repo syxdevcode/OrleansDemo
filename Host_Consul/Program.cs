@@ -9,7 +9,8 @@ namespace Host_Consul
     class Program
     {
         static void Main(string[] args)
-        {//获得一个配置实例
+        {
+            //获得一个配置实例
             //它需要两个端口,第一个端口2234是用来silo与silo之间的通信的,第二个1234是用于监听client的请求的
             //var config = Orleans.Runtime.Configuration.ClusterConfiguration.LocalhostPrimarySilo(2234, 1234);
 
