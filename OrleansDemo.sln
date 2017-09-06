@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grains", "Grains\Grains.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGrains", "IGrains\IGrains.csproj", "{450BA67E-517C-44B5-91DF-DF2B08DA9069}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host_Consul", "Host_Consul\Host_Consul.csproj", "{F48E13A0-801E-4687-A7C0-01456F24F0CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{450BA67E-517C-44B5-91DF-DF2B08DA9069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{450BA67E-517C-44B5-91DF-DF2B08DA9069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{450BA67E-517C-44B5-91DF-DF2B08DA9069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48E13A0-801E-4687-A7C0-01456F24F0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48E13A0-801E-4687-A7C0-01456F24F0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48E13A0-801E-4687-A7C0-01456F24F0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48E13A0-801E-4687-A7C0-01456F24F0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

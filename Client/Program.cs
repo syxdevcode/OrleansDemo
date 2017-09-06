@@ -74,7 +74,7 @@ namespace Client
 
             // 持久化
             Console.WriteLine("持久化开始");
-            var g = grainFactory.GetGrain<IBasicWithState>("123");
+            var g = grainFactory.GetGrain<IBasicWithState>("456");
             g.SayHello("说了1个hello");
             var his = await g.GetHistory();
             foreach (var item in his)

@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ClientConfiguration xmlns="urn:orleans">
-  <!--<SystemStore SystemStoreType="Custom"  CustomGatewayProviderAssemblyName="OrleansConsulUtils"  DataConnectionString="http://localhost:8500" DeploymentId="MyOrleansDeployment" />-->
+  <!--consul群集-->
+  <SystemStore SystemStoreType="Custom"  CustomGatewayProviderAssemblyName="OrleansConsulUtils"  DataConnectionString="http://localhost:8500" DeploymentId="MyOrleansDeployment" />
   
-  <SystemStore SystemStoreType="SqlServer"
+  <!--以下配置为sql server 群集-->
+  <!--<SystemStore SystemStoreType="SqlServer"
                DeploymentId="我就说123"
                DataConnectionString="Server=.;Database=OrleansBasic;User Id=sa;Password=Xing_*SQL;"/>
-  
+  -->
   <Gateway Address="localhost" Port="30000"/>
   <Gateway Address="localhost" Port="30001"/>
   <Gateway Address="localhost" Port="30002"/>
